@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+      :root{
+        --primary-color: #0052A5;
+        --secundary-color: #006BC9;
+        --alt-color: #F40F21;
+        --bg-gris: #EDEDED;
+        --barra: #E5E5E5;
+
+        font-family: 'Roboto', sans-serif;
+        
+        --regular-font: .85rem;
+        --upperc-font: 1rem;
+      }
+      
+      body {
+        background: #c2c2c2;
+      }
+
+      p {
+        font-size: var(--regular-font);
+      }
+
+      .upperc {
+        font-size: var(--upperc-font);
+        font-weight: 900;
+        color: var(--alt-color);
+      }
+
+      .container {
+        max-width: 600px;
+        background: #fff;
+      }
+
+      .justify {
+        text-align: justify;
+      }
+      .bloque1 {
+        border-right: 1px solid var(--barra);
+      }
+
+      .inline {
+        display: inline;
+        border-bottom: 4px solid var(--alt-color);
+      }
+      .b-campana{
+        background-color: var(--bg-gris);
+      }
+      
+      .subtitle-primary {
+        color: var(--primary-color);
+      }
+
+      .subtitle-primary-blank {
+        color: #fff;
+      }
+      
+      .b-fb {
+        background-image   : url(./img/puntos-abajo-hb.png);
+        background-repeat  : no-repeat;
+        background-position: 90% 90%;
+      }
+      .b-fb p {
+        margin-bottom: .25rem;
+      }
+      .b-medico{
+        background-color: var(--primary-color);
+      }
+
+      .final-bloque1 {
+        background-color: var(--secundary-color);
+      }
+      
+      .b-medico > p , .final-bloque1{
+        color: #fff;
+      }
+
+      .img-radius {
+        border-radius: 100%;
+      }
+    </style>
+
+    <title>Boletin Clínica San Judas Tadeo</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-3 ">
+        <div class="col p-0">
+          <img src="/img/header.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col p-0 bloque1">
+          <div class="col b-inicio p-4">
+            <h4 class="subtitle-primary mb-4">Lorem ipsum</h4>
+            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat aliquid a, tempore unde deserunt? Quas totam nam cupiditate provident!</p>
+            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat.</p>
+            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat aliquid a, tempore unde deserunt? Quas totam nam cupiditate provident!</p>
+            <img src="/img/Arrow.png" alt="">
+          </div>
+          <div class="col b-campana p-4">
+            <h4 class="subtitle-primary mb-4">Campañas del mes</h4>
+            <p class="pb-5 justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque labore veritatis libero atque laudantium, dolores magni ex corporis similique corrupti aperiam fugit aliquam ad unde, commodi aspernatur cum, non aut.</p>
+            <div class="card2 text-center pb-5">
+              <img class="pb-3"  src="/img/1.png" alt="">
+              <h5>Lorem imusmp</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card2 text-center pb-3">
+              <img class="pb-3" src="/img/2.png" alt="">
+              <h5>Lorem imusmp</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col p-4 final-bloque1">
+            <div class="div">
+              <img src="/img/SubTitle.png" alt="" class="pb-3">
+            </div>
+            <div class="parrafo-final">
+              <h4>Lorem ipsum</h4>
+              <p class="pb-3 justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi nesciunt numquam obcaecati excepturi enim, aliquam repellendus soluta!</p>
+            </div>
+            <div class="parrafo-final">
+              <h4>Lorem ipsum</h4>
+              <p class="pb-3 justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi nesciunt numquam obcaecati excepturi enim, aliquam repellendus soluta!</p>
+            </div>
+            <div class="parrafo-final">
+              <h4>Lorem ipsum</h4>
+              <p class="pb-3 justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi nesciunt numquam obcaecati excepturi enim, aliquam repellendus soluta!</p>
+            </div>
+            <div class="div">
+              <img src="/img/final-section.png" alt="" class="pb-3">
+            </div>
+          </div>
+        </div>
+        <div class="col p-0">
+          <div class="col p-3 text-center">
+            <img src="/img/HB.png" alt="">
+          </div>
+          <!-- Fechas de Cumpleaños -->
+          <div class="b-fb p-4">
+            <h4 class="subtitle-primary">Cumpleaños del mes</h4>
+            <div class="row">
+              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col"><p>Jesús Villarreal</p></div>
+            </div>
+            <div class="row">
+              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col"><p>Jesús Villarreal</p></div>
+            </div>
+            <div class="row">
+              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col"><p>Jesús Villarreal</p></div>
+            </div>
+            <div class="row">
+              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col"><p>Jesús Villarreal</p></div>
+            </div>
+            <div class="row">
+              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col"><p>Jesús Villarreal</p></div>
+            </div>
+            <div class="row">
+              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col"><p>Jesús Villarreal</p></div>
+            </div>
+            <div class="row">
+              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col"><p>Jesús Villarreal</p></div>
+            </div>
+            <div class="row">
+              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col"><p>Jesús Villarreal</p></div>
+            </div>
+            <div class="row">
+              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col"><p>Jesús Villarreal</p></div>
+            </div>
+            <div class="row">
+              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col"><p>Jesús Villarreal</p></div>
+            </div>
+          
+          
+          </div>
+          <div class="col p-4 b-medico">
+            <h4 class="subtitle-primary-blank mb-4 ">Articulo medico</h4>
+            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat aliquid a, tempore unde deserunt? Quas totam nam cupiditate provident!</p>
+            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat.</p>
+            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat aliquid a, tempore unde deserunt? Quas totam nam cupiditate provident!</p>
+          </div>
+          <div class="b-ingreso p-4">
+            <h4 class="subtitle-primary mb-4">Nuevos ingresos a la clinica </h4>
+            <div class="card2 text-center py-4">
+              <img class="pb-3" src="/img/3.png" alt="">
+              <h5>Lorem imusmp</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card2 text-center">
+              <img class="pb-3" src="/img/3.png" alt="">
+              <h5>Lorem imusmp</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="">
+            <img class="w-100" src="/img/img-medicos.png" alt="">
+          </div>
+          <div class="col p-4">
+            <div class="pb-3">
+              <img src="/img/Newspaper.png" alt="" class="">
+              <h4 class="inline">Lorem Ipsum</h4>
+            </div>
+            <p class="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet minus porro mollitia ea exercitationem est, cumque et natus animi itaque voluptatibus velit vero architecto possimus, fugiat, nulla provident consectetur sequi?</p>
+          </div>
+        
+    </div>
+
+   
+  </body>
+</html>
