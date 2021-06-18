@@ -15,16 +15,22 @@
 
     <style>
 
+      @font-face {
+          font-family: "Gilroy";
+          src: url('./font/Gilroy-Regular.ttf');
+        }
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
       :root{
         --primary-color: #0052A5;
         --secundary-color: #006BC9;
+        --txt-body: #212529;
         --alt-color: #F40F21;
         --bg-gris: #EDEDED;
         --barra: #E5E5E5;
 
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
+        --bs-font-sans-serif: "Gilroy";
         
         --regular-font: .85rem;
         --upperc-font: 1rem;
@@ -45,7 +51,7 @@
       }
 
       .container {
-        max-width: 600px;
+        max-width: 800px;
         background: #fff;
       }
 
@@ -70,6 +76,11 @@
 
       .subtitle-primary-blank {
         color: #fff;
+      }
+
+      .text-bienvenida {
+        display: inline;
+        color: var(--txt-body)
       }
       
       .b-fb {
@@ -108,17 +119,19 @@
       </div>
       <div class="row">
         <div class="col p-0 bloque1">
-          <div class="col b-inicio p-4">
-            <h4 class="subtitle-primary mb-4">Lorem ipsum</h4>
-            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat aliquid a, tempore unde deserunt? Quas totam nam cupiditate provident!</p>
-            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat.</p>
-            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat aliquid a, tempore unde deserunt? Quas totam nam cupiditate provident!</p>
+          <div class="col b-inicio p-5">
+            <h4 class="subtitle-primary mb-4" style="line-height: 1rem;text-align: justify;">Bievenidos <p class="text-bienvenida">a la primera edición de nuestro Boletín Interno.</p></h4>
+            <p class="justify">Estimados colaboradores, con la idea de promover la interacción, información y la promoción de las actividades diarias y vida institucional, hemos creado este espacio interactivo denominado “En Familia” </p>
+            <p class="justify">Partimos por reconocer que la integración de todos los miembros de una organización inicia con el reconocimiento de necesidad de estar en sintonía y bien comunicados. Es por eso que mensualmente contaremos con estas ediciones que en sus diversas presentaciones irán reflejando notas de interés, información para fomentar el bienestar, campañas y promociones de servicios de salud, entre otros. ¡Si estás interesado en compartir una nota o artículo creado por ti será más que bienvenido!</p>
+            <!-- <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat aliquid a, tempore unde deserunt? Quas totam nam cupiditate provident!</p> -->
             <img src="/img/Arrow.png" alt="">
           </div>
-          <div class="col b-campana p-4">
-            <h4 class="subtitle-primary mb-4">Campañas del mes</h4>
-            <p class="pb-5 justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque labore veritatis libero atque laudantium, dolores magni ex corporis similique corrupti aperiam fugit aliquam ad unde, commodi aspernatur cum, non aut.</p>
-            <div class="card2 text-center pb-5">
+          <div class="col b-campana p-5">
+            <h4 class="subtitle-primary mb-4">Programa interno<br>“Entre amigos”</h4>
+            <p class="pb-2 justify">Con mucha alegría lanzamos este primer programa de puertas abiertas que busca fortalecer el diálogo entre nuestros colaboradores y las gerencias de tal manera que siempre existan lazos de comunicación, abierta y transparente en búsqueda del bienestar y crear mejores formas de que nuestra familia se fortalezca.</p>
+            <p class="pb-2 justify">El comité directivo que atenderá estas reuniones lo constituyen Javier Matos, encargado de nuestros médicos y licenciados. Ricardo Fiorani, Jacky Yañez y Janet Delgado para el resto de nuestros colaboradores.</p>
+            <p class="pb-2 justify">Cada miembro de nuestra familia San Judas Tadeo podrá solicitar con alguno de los encargados una cita que preferentemente se hará en horas fuera de la jornada laboral del colaborador. En los siguientes días compartiremos los horarios disponibles. </p>
+            <!-- <div class="card2 text-center pb-5">
               <img class="pb-3"  src="/img/1.png" alt="">
               <h5>Lorem imusmp</h5>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -127,22 +140,27 @@
               <img class="pb-3" src="/img/2.png" alt="">
               <h5>Lorem imusmp</h5>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+            </div> -->
           </div>
-          <div class="col p-4 final-bloque1">
+          <div class="col p-5 final-bloque1">
             <div class="div">
               <img src="/img/SubTitle.png" alt="" class="pb-3">
             </div>
+            <p>Porque siempre tenemos que estar en sintonía, les compartimos las Campañas y Promociones del mes de Julio:</p>
             <div class="parrafo-final">
-              <h4>Lorem ipsum</h4>
+              <h4>Campaña Programa adulto mayor</h4>
               <p class="pb-3 justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi nesciunt numquam obcaecati excepturi enim, aliquam repellendus soluta!</p>
             </div>
             <div class="parrafo-final">
-              <h4>Lorem ipsum</h4>
+              <h4>Campaña de despistaje de Problemas de Tiroides</h4>
               <p class="pb-3 justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi nesciunt numquam obcaecati excepturi enim, aliquam repellendus soluta!</p>
             </div>
             <div class="parrafo-final">
-              <h4>Lorem ipsum</h4>
+              <h4>Campaña de Chequeo Post Covid19</h4>
+              <p class="pb-3 justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi nesciunt numquam obcaecati excepturi enim, aliquam repellendus soluta!</p>
+            </div>
+            <div class="parrafo-final">
+              <h4>Programa Madre Bebé </h4>
               <p class="pb-3 justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi nesciunt numquam obcaecati excepturi enim, aliquam repellendus soluta!</p>
             </div>
             <div class="div">
@@ -155,8 +173,9 @@
             <img src="/img/HB.png" alt="">
           </div>
           <!-- Fechas de Cumpleaños -->
-          <div class="b-fb p-4">
+          <div class="b-fb p-5">
             <h4 class="subtitle-primary">Cumpleaños del mes</h4>
+            <p class="pb-3">Nuestras felicitaciones y un gran abrazo a todas las personas que en este mes cumplen un año más de vida de parte de toda la familia San Judas Tadeo. </p>
             <div class="row">
               <div class="col-2 "><p class="upperc">02</p></div>
               <div class="col"><p>Jesús Villarreal</p></div>
@@ -170,64 +189,68 @@
               <div class="col"><p>Jesús Villarreal</p></div>
             </div>
             <div class="row">
-              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col-2 "><p class="upperc">07</p></div>
               <div class="col"><p>Jesús Villarreal</p></div>
             </div>
             <div class="row">
-              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col-2 "><p class="upperc">08</p></div>
               <div class="col"><p>Jesús Villarreal</p></div>
             </div>
             <div class="row">
-              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col-2 "><p class="upperc">10</p></div>
               <div class="col"><p>Jesús Villarreal</p></div>
             </div>
             <div class="row">
-              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col-2 "><p class="upperc">14</p></div>
               <div class="col"><p>Jesús Villarreal</p></div>
             </div>
             <div class="row">
-              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col-2 "><p class="upperc">17</p></div>
               <div class="col"><p>Jesús Villarreal</p></div>
             </div>
             <div class="row">
-              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col-2 "><p class="upperc">23</p></div>
               <div class="col"><p>Jesús Villarreal</p></div>
             </div>
             <div class="row">
-              <div class="col-2 "><p class="upperc">02</p></div>
+              <div class="col-2 "><p class="upperc">27</p></div>
               <div class="col"><p>Jesús Villarreal</p></div>
             </div>
           
           
           </div>
-          <div class="col p-4 b-medico">
-            <h4 class="subtitle-primary-blank mb-4 ">Articulo medico</h4>
-            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat aliquid a, tempore unde deserunt? Quas totam nam cupiditate provident!</p>
-            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat.</p>
-            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi incidunt velit molestias, dolor natus rerum labore aspernatur officia quaerat aliquid a, tempore unde deserunt? Quas totam nam cupiditate provident!</p>
+          <div class="col p-5 b-medico">
+            <h4 class="subtitle-primary-blank mb-4 ">Colchitas para todos:</h4>
+            <p class="justify">San Judas Tadeo te cuida en este invierno.</p>
+            <p class="justify">Ante el frio intenso queremos que no te falte nuestro abrigo, por eso con mucho cariño eso hemos regalado a todos nuestros trabajadores una colchitas cómodas y prácticas para que las uses en donde estés. </p>
+            
           </div>
-          <div class="b-ingreso p-4">
-            <h4 class="subtitle-primary mb-4">Nuevos ingresos a la clinica </h4>
+          <div class="b-ingreso p-5">
+            <h4 class="subtitle-primary mb-4">Nuevos ingresos a la clínica </h4>
+            <p>Brindamos una gran bienvenida a los nuevos talentos que se incorporan a nuestra Familia:</p>
             <div class="card2 text-center py-4">
               <img class="pb-3" src="/img/3.png" alt="">
-              <h5>Lorem imusmp</h5>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h5>Karin Miljanovich</h5>
+              <p>Jefa de Marketing</p>
             </div>
             <div class="card2 text-center">
               <img class="pb-3" src="/img/3.png" alt="">
-              <h5>Lorem imusmp</h5>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h5>Gisel Oyola</h5>
+              <p>Jefa Comercial</p>
             </div>
           </div>
           <div class="">
             <img class="w-100" src="/img/img-medicos.png" alt="">
           </div>
-          <div class="col p-4">
+          <div class="col p-5">
             <div class="pb-3">
-              <img src="/img/Newspaper.png" alt="" class="">
-              <h4 class="inline">Lorem Ipsum</h4>
+              <img src="/img/Newspaper.png" alt="" class="" width="10%">
+              <p style="display: inline;">Tema Salud</p>
             </div>
-            <p class="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet minus porro mollitia ea exercitationem est, cumque et natus animi itaque voluptatibus velit vero architecto possimus, fugiat, nulla provident consectetur sequi?</p>
+            <h4 class="inline" >Las dietas Detox, ¿es útil o riesgoso realizarla?</h4>
+            <p class="justify mt-4">Reducir peso y centímetros de una forma milagrosa suele ser un gran deseo. Cada vez es más frecuente que las personas recurran a las llamadas dietas de desintoxicación. Estas dietas son utilizadas en un plazo corto para ayudar a eliminar toxinas del cuerpo, promover la salud y reducir peso. La característica principal de estas dietas son los ayunos por muchas horas seguidos por consumir solo jugos “détox”. ¿quieres conocer más sobre este tema? Te invitamos a conectarte a este link: </p>
+
+            <p><a href="https://www.clinicasanjudastadeo.com.pe/consejos-de-salud/consejo-3" target=”_blank” >Presiona para seguir leyendo...</a></p>
           </div>
         
     </div>
